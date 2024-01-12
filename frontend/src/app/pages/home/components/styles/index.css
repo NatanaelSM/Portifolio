@@ -1,11 +1,16 @@
 .container-section {
     width: 100%;
     height: 70vh;
-    padding-inline: 18%;
+    padding-inline: 14%;
+}
+
+.flex-centralizer{
+    justify-content: center;
+    align-items: center;
 }
 
 .btn-social-media {
-    width: 235px;
+    width: 245px;
     height: 50px;
     border-radius: 20px;
     background: linear-gradient(92deg, #9B79FC 2.07%, rgba(255, 255, 255, 0.25) 160.82%);
@@ -17,4 +22,5 @@
 .text-content{
     color: white;
     font-weight: bold;
+    font-size: 22px;
 }

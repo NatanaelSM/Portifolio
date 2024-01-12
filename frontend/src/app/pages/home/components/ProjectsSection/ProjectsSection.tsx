@@ -6,6 +6,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import '../styles/swiperProjectsSection.css';
 import { Pagination } from 'swiper/modules';
+import { TitleSection } from "../../../../shared/components/titleSection/TitleSection";
 
 export const ProjectsSection = () => {
 
@@ -13,24 +14,21 @@ export const ProjectsSection = () => {
         <Flex
             className="container-section"
             justifyContent='center'
-            paddingY='5%'>
-            <Box
-                w='100%'>
+            paddingY='3%'
+            h='80vh'>
+            <Flex
+                flexDirection='column'
+                w='100%'
+                h='100%'>
                 <Flex
-                    h='20%'
-                    justifyContent='center'>
-                    <Heading
-                        font-family='Radley'
-                        fontStyle='italic'
-                        fontSize='50px'
-                        fontWeight='600'
-                        color='#7DAEF6'>
-                        Projetos
-                    </Heading>
+                    w='100%'
+                    h='10%'
+                    className="flex-centralizer">
+                    <TitleSection titulo='Projetos'/>
                 </Flex>
                 <Flex
-                    justifyContent='center'
-                    h='80%'>
+                    pt='3%'
+                    h='90%'>
                     <Swiper
                         slidesPerView={3}
                         spaceBetween={30}
@@ -39,7 +37,6 @@ export const ProjectsSection = () => {
                         }}
                         modules={[Pagination]}
                         className="mySwiper">
-
                         <SwiperSlide>
                             <Box
                                 h='15%'
@@ -61,7 +58,7 @@ export const ProjectsSection = () => {
                                 <Text
                                     w='100%'
                                     textAlign='start'>
-                                    Descrição do projeto Descrição do projeto Descrição do projeto Descrição do projeto Descrição do projetoDescrição do projetoDescrição do projeto 
+                                    Descrição do projeto Descrição do projeto Descrição do projeto Descrição do projeto Descrição do projetoDescrição do projetoDescrição do projeto
                                 </Text>
                             </Flex>
                         </SwiperSlide>
@@ -72,7 +69,7 @@ export const ProjectsSection = () => {
                         <SwiperSlide></SwiperSlide>
                     </Swiper>
                 </Flex>
-            </Box>
+            </Flex>
         </Flex >
     )
 }
