@@ -8,11 +8,11 @@ export const LinkHeader = ({conteudo} : LinkHeaderProps) => {
     return (
         <Link
             fontWeight='600'
-            opacity='0.8'
-            borderBottom='2px solid white'
+            opacity='0.7'
+            borderBottom='2px solid black'
             _hover={{
                 textDecor: 'none',
-                borderBottom: '2px',
+                borderBottom:'2px solid #9B79FC',
                 opacity: 1
             }}>{conteudo}
         </Link>
