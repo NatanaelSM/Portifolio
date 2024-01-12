@@ -1,13 +1,15 @@
-import { Flex, Grid, GridItem, HStack } from "@chakra-ui/react"
+import { Flex, Grid, GridItem, HStack, Img } from "@chakra-ui/react"
 import { LinkHeader } from "./LinkHeader"
-// import logo from "../../../assets/logo.png"
+import logo from '../../../assets/logo_transparent.png'
 
 export const Header = () => {
 
     return (
         <Flex
             w='100vw'
-            h='10vh'>
+            h='130px'
+            position='fixed'
+            zIndex='999'>
             <Grid
                 w='100%'
                 h='100%'
@@ -22,7 +24,7 @@ export const Header = () => {
                     alignItems='center'
                     justifyContent='start'
                     colSpan={1}>
-                    logo
+                    <Img src={logo} alt='logo'/>
                 </GridItem>
                 <GridItem
                     w='100%'

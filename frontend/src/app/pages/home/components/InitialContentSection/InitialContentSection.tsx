@@ -1,81 +1,84 @@
 import { Flex, Grid, GridItem, HStack, Heading, Img, Text, VStack } from "@chakra-ui/react"
-import linkedinImage from "../../../assets/linkedin.png";
-import githubImage from "../../../assets/github.png";
-import containerPhoto from "../../../assets/Vector.png";
-import './styles/index.css'
+import linkedinImage from "../../../../assets/linkedin.png";
+import githubImage from "../../../../assets/github.png";
+import '../styles/index.css'
+import foto from '../../../../assets/foto.png'
 
 export const InitialContentSection = () => {
 
     return (
-        <Grid
-            templateColumns='50% 50%'
+        <Flex
             className="container-section"
-            h='80vh'
-            marginTop='3%'>
-            <GridItem
-                colSpan={1}>
-                <Flex
-                    marginBottom='30%'
-                    w='100%'
-                    h='100%'
-                    justifyContent='center'
-                    alignItems='center'
-                    paddingBottom='10%'>
+            h='100vh'>
+            <Grid
+                w='100%'
+                templateColumns='50% 50%'>
+                <GridItem
+                    colSpan={1}>
                     <Flex
-                        flexDir='column'>
-                        <VStack
-                            align='start'
-                            spacing='15px'>
-                            <Text
-                                fontSize='25px'
-                                fontWeight='600'>
-                                Olá, me chamo
-                            </Text>
-                            <Heading
-                                font-family='Radley'
-                                fontStyle='italic'
-                                fontSize='50px'
-                                fontWeight='600'
-                                color='#9B79FC'>
-                                Natanael S. Machado
-                            </Heading>
-                            <Text
-                                fontSize='25px'
-                                fontWeight='600'>
-                                e seja bem-vindo ao meu portifólio!
-                            </Text>
-                        </VStack>
-                        <HStack
-                            spacing='15px'
-                            marginTop='15px'>
-                            <Flex className="btn-social-media" >
+
+                        marginBottom='30%'
+                        w='100%'
+                        h='100%'
+                        justifyContent='center'
+                        alignItems='center'
+                        paddingBottom='10%'>
+                        <Flex
+                            flexDir='column'>
+                            <VStack
+                                align='start'
+                                spacing='15px'>
                                 <Text
-                                    className="text-content"
-                                    marginRight='5px'>
-                                    Linkedin
+                                    fontSize='30px'
+                                    fontWeight='bold'>
+                                    Olá, me chamo
                                 </Text>
-                                <Img boxSize='35px' src={linkedinImage} alt="LinkedIn" />
-                            </Flex>
-                            <Flex className="btn-social-media" >
+                                <Heading
+                                    font-family='Radley'
+                                    fontStyle='italic'
+                                    fontSize='55px'
+                                    fontWeight='bold'
+                                    color='#9B79FC'>
+                                    Natanael S. Machado
+                                </Heading>
                                 <Text
-                                    className="text-content"
-                                    marginRight='5px'>
-                                    GitHub
+                                    fontSize='30px'
+                                    fontWeight='600'>
+                                    e seja bem-vindo ao meu portifólio!
                                 </Text>
-                                <Img boxSize='35px' src={githubImage} alt="LinkedIn" />
-                            </Flex>
-                        </HStack>
+                            </VStack>
+                            <HStack
+                                spacing='15px'
+                                marginTop='15px'>
+                                <Flex className="btn-social-media" >
+                                    <Text
+                                        className="text-content"
+                                        marginRight='5px'>
+                                        Linkedin
+                                    </Text>
+                                    <Img boxSize='35px' src={linkedinImage} alt="LinkedIn" />
+                                </Flex>
+                                <Flex className="btn-social-media" >
+                                    <Text
+                                        className="text-content"
+                                        marginRight='5px'>
+                                        GitHub
+                                    </Text>
+                                    <Img boxSize='35px' src={githubImage} alt="LinkedIn" />
+                                </Flex>
+                            </HStack>
+                        </Flex>
                     </Flex>
-                </Flex>
-            </GridItem>
-            <GridItem colSpan={1}>
-                <Flex
-                    justifyContent='center'
-                    alignItems='center'
-                    h='100%'>
-                    <Img src={containerPhoto} />
-                </Flex>
-            </GridItem>
-        </Grid>
+                </GridItem>
+                <GridItem colSpan={1}>
+                    <Flex
+                        className="flex-centralizer"
+                        h='100%'>
+                        <Img src={foto} alt='foto' />
+                    </Flex>
+                </GridItem>
+            </Grid>
+        </Flex>
+
     )
 }
