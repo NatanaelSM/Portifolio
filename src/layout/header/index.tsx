@@ -1,6 +1,6 @@
 import { Flex, Grid, GridItem, HStack, Img } from "@chakra-ui/react"
 import { LinkHeader } from "./LinkHeader"
-import logo from '../../../assets/logo_transparent.png'
+import logo from '../../assets/logo_transparent.png'
 
 interface HeaderProps{
     onClickSection: (page:'initial'|'about'|'projects'|'skills') => void
