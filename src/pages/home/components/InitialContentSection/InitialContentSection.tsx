@@ -5,7 +5,7 @@ import '../styles/index.css'
 import foto from '../../../../assets/foto.png'
 import { ForwardedRef, forwardRef } from "react";
 
-export const InitialContentSection = forwardRef((props, ref: ForwardedRef<HTMLDivElement>) => {
+export const InitialContentSection = forwardRef((_props, ref: ForwardedRef<HTMLDivElement>) => {
 
     return (
         <Flex

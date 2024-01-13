@@ -9,7 +9,7 @@ import { Pagination } from 'swiper/modules';
 import { TitleSection } from "../../../../shared/components/titleSection/TitleSection/TitleSection";
 import { ForwardedRef } from "react";
 
-export const ProjectsSection = forwardRef((props, ref: ForwardedRef<HTMLDivElement>) => {
+export const ProjectsSection = forwardRef((_props, ref: ForwardedRef<HTMLDivElement>) => {
 
     return (
         <Flex

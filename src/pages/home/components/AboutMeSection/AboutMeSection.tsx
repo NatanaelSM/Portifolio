@@ -4,7 +4,7 @@ import { TitleSection } from "../../../../shared/components/titleSection/TitleSe
 import tecnology from '../../../../assets/tecnology.png'
 import { ForwardedRef } from "react"
 
-export const AboutMeSection = forwardRef((props, ref: ForwardedRef<HTMLDivElement>) => {
+export const AboutMeSection = forwardRef((_props, ref: ForwardedRef<HTMLDivElement>) => {
     return (
         <Flex
             ref={ref}
