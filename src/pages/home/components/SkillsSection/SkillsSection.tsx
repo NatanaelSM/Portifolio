@@ -1,6 +1,6 @@
 import { Flex, Text, forwardRef } from "@chakra-ui/react"
 import '../styles/index.css'
-import { TitleSection } from "../../../../shared/components/titleSection/TitleSection"
+import { TitleSection } from "../../../../shared/components/titleSection/TitleSection/TitleSection"
 import { Skill } from "./Skill"
 import { ForwardedRef } from "react"
 

@@ -1,6 +1,6 @@
 import { Flex, Grid, GridItem, Img, Text, VStack, forwardRef } from "@chakra-ui/react"
 import '../styles/index.css'
-import { TitleSection } from "../../../../shared/components/titleSection/TitleSection"
+import { TitleSection } from "../../../../shared/components/titleSection/TitleSection/TitleSection"
 import tecnology from '../../../../assets/tecnology.png'
 import { ForwardedRef } from "react"
 

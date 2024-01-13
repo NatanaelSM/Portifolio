@@ -6,7 +6,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import '../styles/swiperProjectsSection.css';
 import { Pagination } from 'swiper/modules';
-import { TitleSection } from "../../../../shared/components/titleSection/TitleSection";
+import { TitleSection } from "../../../../shared/components/titleSection/TitleSection/TitleSection";
 import { ForwardedRef } from "react";
 
 export const ProjectsSection = forwardRef((props, ref: ForwardedRef<HTMLDivElement>) => {

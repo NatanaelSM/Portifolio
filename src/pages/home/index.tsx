@@ -2,8 +2,8 @@ import { AboutMeSection } from "./components/AboutMeSection/AboutMeSection"
 import { InitialContentSection } from "./components/InitialContentSection/InitialContentSection"
 import { ProjectsSection } from "./components/ProjectsSection/ProjectsSection"
 import { HabilitsSection } from "./components/SkillsSection/SkillsSection"
-import { Header } from "../../shared/components/header"
-import { Footer } from "../../shared/components/footer"
+import { Header } from "../../layout/header"
+import { Footer } from "../../layout/footer"
 import { useRef } from "react"
 
 export const Home = () => {
