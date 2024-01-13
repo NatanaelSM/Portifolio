@@ -1,12 +1,12 @@
 import { ChakraProvider } from "@chakra-ui/react"
-import { Router } from "./routes"
 import { theme } from "./theme"
+import { Home } from "./pages/home"
 
 function App() {
 
   return (
     <ChakraProvider theme={theme}>
-        <Router/>
+        <Home/>
     </ChakraProvider> 
   )
 }

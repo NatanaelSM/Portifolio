@@ -3,11 +3,13 @@ import linkedinImage from "../../../../assets/linkedin.png";
 import githubImage from "../../../../assets/github.png";
 import '../styles/index.css'
 import foto from '../../../../assets/foto.png'
+import { ForwardedRef, forwardRef } from "react";
 
-export const InitialContentSection = () => {
+export const InitialContentSection = forwardRef((props, ref: ForwardedRef<HTMLDivElement>) => {
 
     return (
         <Flex
+            ref={ref}
             className="container-section"
             h='100vh'>
             <Grid
@@ -16,7 +18,6 @@ export const InitialContentSection = () => {
                 <GridItem
                     colSpan={1}>
                     <Flex
-
                         marginBottom='30%'
                         w='100%'
                         h='100%'
@@ -81,4 +82,4 @@ export const InitialContentSection = () => {
         </Flex>
 
     )
-}
+})

@@ -1,11 +1,13 @@
-import { Flex, Text } from "@chakra-ui/react"
+import { Flex, Text, forwardRef } from "@chakra-ui/react"
 import '../styles/index.css'
 import { TitleSection } from "../../../../shared/components/titleSection/TitleSection"
 import { Skill } from "./Skill"
+import { ForwardedRef } from "react"
 
-export const HabilitsSection = () => {
+export const HabilitsSection = forwardRef((props, ref: ForwardedRef<HTMLDivElement>) => {
     return (
         <Flex
+            ref={ref}
             className="container-section flex-centralizer"
             bg='black'
             paddingY='5%'
@@ -15,7 +17,7 @@ export const HabilitsSection = () => {
                 w='100%'
                 h='100%'
                 flexDir='column'
-                >
+            >
                 <Flex
                     w='100%'
                     h='10%'
@@ -28,7 +30,7 @@ export const HabilitsSection = () => {
                     flexDir='column'
                     alignItems='center'
                     pt='3%'>
-                        <Skill/>
+                    <Skill />
                 </Flex>
                 <Flex
                     w='100%'
@@ -50,4 +52,4 @@ export const HabilitsSection = () => {
             </Flex>
         </Flex >
     )
-}
+})

@@ -1,11 +1,13 @@
-import { Flex, Grid, GridItem, Img, Text, VStack } from "@chakra-ui/react"
+import { Flex, Grid, GridItem, Img, Text, VStack, forwardRef } from "@chakra-ui/react"
 import '../styles/index.css'
 import { TitleSection } from "../../../../shared/components/titleSection/TitleSection"
 import tecnology from '../../../../assets/tecnology.png'
+import { ForwardedRef } from "react"
 
-export const AboutMeSection = () => {
+export const AboutMeSection = forwardRef((props, ref: ForwardedRef<HTMLDivElement>) => {
     return (
         <Flex
+            ref={ref}
             className="container-section flex-container"
             bg='black'
             h='80vh'
@@ -64,4 +66,4 @@ export const AboutMeSection = () => {
             </Flex>
         </Flex>
     )
-}
+})

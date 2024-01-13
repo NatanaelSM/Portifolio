@@ -1,4 +1,4 @@
-import { Box, Flex, Heading, Text } from "@chakra-ui/react"
+import { Box, Flex, Heading, Text, forwardRef } from "@chakra-ui/react"
 import '../styles/index.css'
 //swipper
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -7,11 +7,13 @@ import 'swiper/css/pagination';
 import '../styles/swiperProjectsSection.css';
 import { Pagination } from 'swiper/modules';
 import { TitleSection } from "../../../../shared/components/titleSection/TitleSection";
+import { ForwardedRef } from "react";
 
-export const ProjectsSection = () => {
+export const ProjectsSection = forwardRef((props, ref: ForwardedRef<HTMLDivElement>) => {
 
     return (
         <Flex
+            ref={ref}
             className="container-section"
             justifyContent='center'
             paddingY='3%'
@@ -24,7 +26,7 @@ export const ProjectsSection = () => {
                     w='100%'
                     h='10%'
                     className="flex-centralizer">
-                    <TitleSection titulo='Projetos'/>
+                    <TitleSection titulo='Projetos' />
                 </Flex>
                 <Flex
                     pt='3%'
@@ -72,4 +74,4 @@ export const ProjectsSection = () => {
             </Flex>
         </Flex >
     )
-}
+})

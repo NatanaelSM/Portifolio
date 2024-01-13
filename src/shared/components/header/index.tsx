@@ -2,7 +2,11 @@ import { Flex, Grid, GridItem, HStack, Img } from "@chakra-ui/react"
 import { LinkHeader } from "./LinkHeader"
 import logo from '../../../assets/logo_transparent.png'
 
-export const Header = () => {
+interface HeaderProps{
+    onClickSection: (page:'initial'|'about'|'projects'|'skills') => void
+}
+
+export const Header = ({onClickSection}: HeaderProps) => {
 
     return (
         <Flex
@@ -35,10 +39,10 @@ export const Header = () => {
                     colSpan={1}>
                     <HStack
                         gap='25px'>
-                        <LinkHeader conteudo="Início" />
-                        <LinkHeader conteudo="Sobre mim" />
-                        <LinkHeader conteudo="Projetos" />
-                        <LinkHeader conteudo="Habilidades" />
+                        <LinkHeader onClick={() => onClickSection('initial')} conteudo="Início" />
+                        <LinkHeader onClick={() => onClickSection('about')} conteudo="Sobre mim" />
+                        <LinkHeader onClick={() => onClickSection('projects')} conteudo="Projetos" />
+                        <LinkHeader onClick={() => onClickSection('skills')} conteudo="Habilidades" />
                     </HStack>
                 </GridItem>
             </Grid>
