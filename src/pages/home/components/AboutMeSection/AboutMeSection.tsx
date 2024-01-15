@@ -1,7 +1,6 @@
-import { Flex, Grid, GridItem, Img, Text, VStack, forwardRef } from "@chakra-ui/react"
+import { Flex, Text, forwardRef } from "@chakra-ui/react"
 import '../styles/index.css'
 import { TitleSection } from "../../../../shared/components/titleSection/TitleSection/TitleSection"
-import tecnology from '../../../../assets/tecnology.png'
 import { ForwardedRef } from "react"
 
 export const AboutMeSection = forwardRef((_props, ref: ForwardedRef<HTMLDivElement>) => {
@@ -15,54 +14,37 @@ export const AboutMeSection = forwardRef((_props, ref: ForwardedRef<HTMLDivEleme
             <Flex
                 w='100%'
                 h='100%'
-                justifyContent='center'>
-                <VStack>
-                    <Flex
-                        w='100%'
-                        h='10%'
-                        className="flex-centralizer">
-                        <TitleSection titulo='Sobre Mim'/>
-                    </Flex>
-                    <Flex
-                        h='90%'
-                        w='100%'
-                        justifyContent='center'
-                        alignItems='center'
-                        pt='3%'>
-                        <Grid
-                            w='100%'
-                            h='100%'
-                            templateColumns='60% 40%'>
-                            <GridItem
-                                colSpan={1}>
-                                <Flex
-                                    w='100%'
-                                    h='100%'
-                                    className="flex-centralizer"
-                                    p='10%'>
-                                    <Text
-                                        color='white'
-                                        w='100%'
-                                        fontSize='25px'>
-                                        No final de 2022 iniciei minha jornada na área de tecnologia e programação, onde me encontrei e me encantei pela linguagem java. A programação não é somente hard skills.Os projetos que desenvolvi, fizeram de mim uma pessoa mais mais ágil, proativa, responsável e com ótima capacidade de trabalhar em grupo.
-                                        No final de 2022 iniciei minha jornada na área de tecnologia e programação, onde me encontrei e me encantei pela linguagem java. A programação não é somente hard skills.Os projetos que desenvolvi, fizeram de mim uma pessoa mais mais ágil, proativa, responsável e com ótima capacidade de trabalhar em grupo.
-                                    </Text>
-                                </Flex>
-                            </GridItem>
-
-                            <GridItem
-                                colSpan={1}>
-                                <Flex
-                                    w='100%'
-                                    h='100%'
-                                    justifyContent='center'
-                                    alignItems='center'>
-                                    <Img src={tecnology} alt='tecnology' />
-                                </Flex>
-                            </GridItem>
-                        </Grid>
-                    </Flex>
-                </VStack>
+                justifyContent='center'
+                alignItems='center'
+                flexDirection='column'>
+                <Flex
+                    w='100%'
+                    h='10%'
+                    className="flex-centralizer">
+                    <TitleSection titulo='Sobre Mim' />
+                </Flex>
+                <Flex
+                    w='100%'
+                    h='100%'
+                    className="flex-centralizer"
+                    gap='3%'
+                    flexDirection='column'>
+                    <Text
+                        className="text-content"
+                        w='100%'>
+                        Olá, me chamo Natanael, tenho 21 anos e estou em busca de uma primeira oportunidade de emprego na área da tecnologia!
+                    </Text>
+                    <Text
+                        className="text-content"
+                        w='100%'>
+                        Trabalhei dois anos como auxiliar de loja em um supermercado, essa experiência me ensinou a ser uma pessoa mais responsável, além de gostar de receber feedbacks para entender no que posso melhorar, assim como resolver problemas, pois, para mim, é uma forma de estimular o crescimento.
+                    </Text>
+                    <Text
+                        className="text-content"
+                        w='100%'>
+                        Atualmente curso o 4º semestre de Análise e Desenvolvimento de Sistemas na FATEC de São José dos Campos, onde encontrei novos desafios a serem superados, estou gostando bastante e cada vez mais estou evoluindo profissional e intelectualmente, não somente pelas aulas mas também por meio de projetos para empresas reais sendo esses realizados em equipe para simular uma situação de trabalho real.
+                    </Text>
+                </Flex>
             </Flex>
         </Flex>
     )

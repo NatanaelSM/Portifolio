@@ -1,4 +1,4 @@
-import { Box, Flex, Heading, Progress, Text } from "@chakra-ui/react"
+import { Box, Flex, Heading, Text } from "@chakra-ui/react"
 import '../styles/index.css'
 
 
@@ -8,7 +8,7 @@ export const Skill = () => {
             w='100%'
             borderRadius='20px'
             bg='black'
-            boxShadow='1px 1px 15px 0px #7DAEF6'
+            boxShadow='1px 1px 15px 0px white'
             alignItems='start'
             justifyContent='center'
             mb='30px'
@@ -32,8 +32,7 @@ export const Skill = () => {
                             HTML, CSS e Javascript, também conhecidas como santíssima trindade da web, formam o principal conjunto de tecnologias para qualquer aplicação web. Já deu para ver que é de suma importância entender MUITO bem esses caras.
                         </Text>
                     </Box>
-
-                    <Box
+                    {/* <Box
                         mb='10px'>
                         <Heading
                             fontSize='20px'
@@ -45,8 +44,8 @@ export const Skill = () => {
                         w='100%'
                         alignItems='center'>
                         <Progress value={80} hasStripe={true} w='90%'/>
-                        <Text ml='10px'>10%</Text>
-                    </Flex>
+                        <Text ml='10px'>80%</Text>
+                    </Flex> */}
                 </Box>
             </Flex>
             <Flex

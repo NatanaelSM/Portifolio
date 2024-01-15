@@ -1,4 +1,4 @@
-import { Flex } from "@chakra-ui/react"
+import { Flex,Text } from "@chakra-ui/react"
 
 export const Footer = () => {
     return (
@@ -8,9 +8,14 @@ export const Footer = () => {
             paddingX='18%'
             boxShadow='0px -10px 20px 0px rgba(61, 61, 61, 0.25)'
             bg='black'
-            mt='3%'>
-            dfs
-
+            justifyContent='center'
+            alignItems='center'
+            mt='3%'
+            gap='5px'
+            className="flex-centralizer">
+                <Text>Desenvolvido por</Text>
+                <Text color=' #9B79FC'>Natanael S. Machado</Text>
+                <Text>| © 2024 todos os direitos reservados</Text>
         </Flex>
     )
 }

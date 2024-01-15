@@ -1,4 +1,4 @@
-import { Box, Flex, Heading, Text, forwardRef } from "@chakra-ui/react"
+import { Flex, forwardRef, Heading, Link } from "@chakra-ui/react"
 import '../styles/index.css'
 //swipper
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -40,32 +40,23 @@ export const ProjectsSection = forwardRef((_props, ref: ForwardedRef<HTMLDivElem
                         modules={[Pagination]}
                         className="mySwiper">
                         <SwiperSlide>
-                            <Box
-                                h='15%'
-                                w='100%'>
-                                <Heading>
-                                    Nome Projeto
-                                </Heading>
-                            </Box>
-                            <Flex
-                                bg='white'
-                                w='80%'
-                                h='50%'>
-                                <Text>IMG</Text>
-                            </Flex>
-                            <Flex
-                                w='100%'
-                                h='35%'
-                                mt='25px'>
-                                <Text
-                                    w='100%'
-                                    textAlign='start'>
-                                    Descrição do projeto Descrição do projeto Descrição do projeto Descrição do projeto Descrição do projetoDescrição do projetoDescrição do projeto
-                                </Text>
-                            </Flex>
+                            <Heading>S.O.G.A.P</Heading>
+                            <Link
+                                className="btn"
+                                href="https://github.com/BuzzTech-API/API_ADS_3SEMESTRE_2023.2"
+                            >
+                                Clique aqui
+                            </Link>
                         </SwiperSlide>
-                        <SwiperSlide></SwiperSlide>
-                        <SwiperSlide></SwiperSlide>
+                        <SwiperSlide>
+                            <Heading>Formulário Simples</Heading>
+                            <Link
+                                className="btn"
+                                href="https://github.com/NatanaelSM/formulario-react"
+                            >
+                                Clique aqui
+                            </Link>
+                        </SwiperSlide>
                         <SwiperSlide></SwiperSlide>
                         <SwiperSlide></SwiperSlide>
                         <SwiperSlide></SwiperSlide>

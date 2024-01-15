@@ -51,7 +51,7 @@ export const InitialContentSection = forwardRef((_props, ref: ForwardedRef<HTMLD
                             <HStack
                                 spacing='15px'
                                 marginTop='15px'>
-                                <Flex className="btn-social-media" >
+                                <Flex className="btn" >
                                     <Text
                                         className="text-content"
                                         marginRight='5px'>
@@ -59,7 +59,7 @@ export const InitialContentSection = forwardRef((_props, ref: ForwardedRef<HTMLD
                                     </Text>
                                     <Img boxSize='35px' src={linkedinImage} alt="LinkedIn" />
                                 </Flex>
-                                <Flex className="btn-social-media" >
+                                <Flex className="btn" >
                                     <Text
                                         className="text-content"
                                         marginRight='5px'>
