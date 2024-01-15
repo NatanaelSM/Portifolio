@@ -1,4 +1,4 @@
-import { Flex, Grid, GridItem, HStack, Heading, Img, Text, VStack } from "@chakra-ui/react"
+import { Flex, Grid, GridItem, HStack, Heading, Img, Text, VStack, Link } from "@chakra-ui/react"
 import linkedinImage from "../../../../assets/linkedin.png";
 import githubImage from "../../../../assets/github.png";
 import '../styles/index.css'
@@ -51,22 +51,28 @@ export const InitialContentSection = forwardRef((_props, ref: ForwardedRef<HTMLD
                             <HStack
                                 spacing='15px'
                                 marginTop='15px'>
-                                <Flex className="btn" >
+                                <Link
+                                    className="btn"
+                                    href="https://www.linkedin.com/in/natanaelsm/">
                                     <Text
                                         className="text-content"
                                         marginRight='5px'>
                                         Linkedin
                                     </Text>
                                     <Img boxSize='35px' src={linkedinImage} alt="LinkedIn" />
-                                </Flex>
-                                <Flex className="btn" >
+                                </Link>
+                                <Link 
+                                    className="btn" 
+                                    href='https://github.com/NatanaelSM'
+                                    >
                                     <Text
                                         className="text-content"
-                                        marginRight='5px'>
+                                        marginRight='5px'
+                                        textDecoration='none'>
                                         GitHub
                                     </Text>
                                     <Img boxSize='35px' src={githubImage} alt="LinkedIn" />
-                                </Flex>
+                                </Link>
                             </HStack>
                         </Flex>
                     </Flex>
