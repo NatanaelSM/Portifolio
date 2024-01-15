@@ -53,7 +53,8 @@ export const InitialContentSection = forwardRef((_props, ref: ForwardedRef<HTMLD
                                 marginTop='15px'>
                                 <Link
                                     className="btn"
-                                    href="https://www.linkedin.com/in/natanaelsm/">
+                                    href="https://www.linkedin.com/in/natanaelsm/"
+                                    target="_blank">
                                     <Text
                                         className="text-content"
                                         marginRight='5px'>
@@ -64,7 +65,7 @@ export const InitialContentSection = forwardRef((_props, ref: ForwardedRef<HTMLD
                                 <Link 
                                     className="btn" 
                                     href='https://github.com/NatanaelSM'
-                                    >
+                                    target="_blank">
                                     <Text
                                         className="text-content"
                                         marginRight='5px'

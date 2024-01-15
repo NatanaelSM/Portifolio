@@ -1,9 +1,9 @@
 import { Box, Flex, Heading, Text, forwardRef } from "@chakra-ui/react"
 import '../styles/index.css'
-import { TitleSection } from "../../../../shared/components/titleSection/TitleSection/TitleSection"
+import { TitleSection } from "../../../../shared/components/titleSection/TitleSection"
 import { ForwardedRef } from "react"
 
-export const HabilitsSection = forwardRef((_props, ref: ForwardedRef<HTMLDivElement>) => {
+export const SkillsSection = forwardRef((_props, ref: ForwardedRef<HTMLDivElement>) => {
     return (
         <Flex
             ref={ref}

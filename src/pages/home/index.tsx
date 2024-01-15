@@ -1,7 +1,7 @@
 import { AboutMeSection } from "./components/AboutMeSection/AboutMeSection"
 import { InitialContentSection } from "./components/InitialContentSection/InitialContentSection"
 import { ProjectsSection } from "./components/ProjectsSection/ProjectsSection"
-import { HabilitsSection } from "./components/SkillsSection/SkillsSection"
+import { SkillsSection } from "./components/SkillsSection/SkillsSection"
 import { Header } from "../../layout/header"
 import { Footer } from "../../layout/footer"
 import { useRef } from "react"
@@ -36,7 +36,7 @@ export const Home = () => {
             <InitialContentSection ref={initialContentRef}/>
             <AboutMeSection ref={aboutMeRef} />
             <ProjectsSection ref={projectsRef} />
-            <HabilitsSection ref={skillsRef}/>
+            <SkillsSection ref={skillsRef}/>
             <Footer/>
         </>
     )

@@ -8,6 +8,7 @@ export const Skill = () => {
             w='100%'
             borderRadius='20px'
             bg='black'
+            h='100%'
             boxShadow='1px 1px 15px 0px white'
             alignItems='start'
             justifyContent='center'
