@@ -32,7 +32,7 @@ export const AboutMeSection = forwardRef((_props, ref: ForwardedRef<HTMLDivEleme
                     <Text
                         className="text-content"
                         w='100%'>
-                        , me chamo Natanael, tenho 21 anos e estou em busca de uma primeira oportunidade de emprego na área da tecnologia!
+                        Olá, me chamo Natanael, tenho 21 anos e estou em busca de uma primeira oportunidade de emprego na área da tecnologia!
                     </Text>
                     <Text
                         className="text-content"
