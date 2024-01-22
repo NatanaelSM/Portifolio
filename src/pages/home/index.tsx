@@ -1,9 +1,4 @@
-import { AboutMeSection } from "./components/AboutMeSection/AboutMeSection"
-import { InitialContentSection } from "./components/InitialContentSection/InitialContentSection"
-import { ProjectsSection } from "./components/ProjectsSection/ProjectsSection"
-import { SkillsSection } from "./components/SkillsSection/SkillsSection"
 import { Header } from "../../layout/header"
-import { Footer } from "../../layout/footer"
 import { useRef } from "react"
 
 export const Home = () => {
@@ -33,11 +28,12 @@ export const Home = () => {
     return (
         <>
             <Header onClickSection={scrollPage}/>
+            {/* <Header onClickSection={scrollPage}/>
             <InitialContentSection ref={initialContentRef}/>
             <AboutMeSection ref={aboutMeRef} />
             <ProjectsSection ref={projectsRef} />
             <SkillsSection ref={skillsRef}/>
-            <Footer/>
+            <Footer/> */}
         </>
     )
 }
