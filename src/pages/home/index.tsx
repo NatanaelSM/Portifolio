@@ -1,5 +1,11 @@
 import { Header } from "../../layout/header"
 import { useRef } from "react"
+import { InitialContentSection } from "./components/InitialContentSection/InitialContentSection"
+import { Flex } from "@chakra-ui/react"
+import { AboutMeSection } from "./components/AboutMeSection/AboutMeSection"
+import { ProjectsSection } from "./components/ProjectsSection/ProjectsSection"
+import { Footer } from "../../layout/footer"
+import { SkillsSection } from "./components/SkillsSection/SkillsSection"
 
 export const Home = () => {
 
@@ -26,14 +32,21 @@ export const Home = () => {
     }
     
     return (
-        <>
+        <Flex
+            w='100%'
+            flexDirection='column'>
             <Header onClickSection={scrollPage}/>
+            <InitialContentSection ref={initialContentRef}/>
+            <AboutMeSection ref={aboutMeRef} />
+            <ProjectsSection ref={projectsRef} />
+            <SkillsSection ref={skillsRef}/>
+            <Footer/>
             {/* <Header onClickSection={scrollPage}/>
             <InitialContentSection ref={initialContentRef}/>
             <AboutMeSection ref={aboutMeRef} />
             <ProjectsSection ref={projectsRef} />
             <SkillsSection ref={skillsRef}/>
             <Footer/> */}
-        </>
+        </Flex>
     )
 }

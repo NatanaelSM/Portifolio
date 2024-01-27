@@ -3,7 +3,7 @@ import { Flex,Text } from "@chakra-ui/react"
 export const Footer = () => {
     return (
         <Flex
-            w='100vw'
+            w='100%'
             h='10vh'
             paddingX='18%'
             boxShadow='0px -10px 20px 0px rgba(61, 61, 61, 0.25)'

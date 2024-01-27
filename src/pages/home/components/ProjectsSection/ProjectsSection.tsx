@@ -19,10 +19,12 @@ export const ProjectsSection = forwardRef((_props, ref: ForwardedRef<HTMLDivElem
     return (
         <Flex
             ref={ref}
-            className="container-section"
             justifyContent='center'
+            bg='#0B0B0B'
             paddingY='3%'
-            h='100vh'>
+            h='100vh'
+            w='100%'
+            paddingInline='20rem'>
             <Flex
                 flexDirection='column'
                 w='100%'

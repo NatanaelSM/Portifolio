@@ -8,11 +8,12 @@ export const SkillsSection = forwardRef((_props, ref: ForwardedRef<HTMLDivElemen
     return (
         <Flex
             ref={ref}
-            className="container-section flex-centralizer"
+            className="flex-centralizer"
             bg='black'
             paddingY='5%'
             h='1800px'
-            flexDir='column'>
+            flexDir='column'
+            paddingInline='20rem'>
             <Flex
                 w='100%'
                 h='100%'

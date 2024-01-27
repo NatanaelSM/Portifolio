@@ -1,9 +1,3 @@
-.container-section {
-    width: 100%;
-    height: 100vh;
-    padding-inline: 14%;
-}
-
 .flex-centralizer{
     justify-content: center;
     align-items: center;
@@ -24,4 +18,10 @@
     color: white;
     font-weight: bold;
     font-size: 30px;
+}
+
+#initialContent-container{
+    height: calc(100vh - 13rem);
+    background: #0B0B0B;
+    width: 100%;
 }

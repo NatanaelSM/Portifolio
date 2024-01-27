@@ -8,11 +8,49 @@ export const AboutMeSection = forwardRef((_props, ref: ForwardedRef<HTMLDivEleme
     return (
         <Flex
             ref={ref}
-            className="container-section flex-container"
             bg='black'
             h='85vh'
-            paddingY='3%'>
+            w='100%'
+            paddingInline='20rem'
+            border='1px solid red'
+            flexDirection='column'>
             <Flex
+                className="flex-centralizer"
+                w='100%'>
+                <TitleSection titulo='Sobre Mim' />
+            </Flex>
+            <Flex
+                w='100%'
+                justifyContent='center'>
+                <Flex
+                    flexDirection='column'
+                    w='60%'
+                    border='1px solid blue'
+                    className="flex-centralizer">
+                    <Text
+                        className="text-content">
+                        Olá, me chamo Natanael, tenho 21 anos e estou em busca de uma primeira oportunidade de emprego na área da tecnologia!
+                    </Text>
+                    <Text
+                        className="text-content">
+                        Trabalhei dois anos como auxiliar de loja em um supermercado, essa experiência me ensinou a ser uma pessoa mais responsável, além de gostar de receber feedbacks para entender no que posso melhorar, assim como resolver problemas, pois, para mim, é uma forma de estimular o crescimento.
+                    </Text>
+                    <Text
+                        className="text-content">
+                        Atualmente curso o 4º semestre de Análise e Desenvolvimento de Sistemas na FATEC de São José dos Campos, onde encontrei novos desafios a serem superados, estou gostando bastante e cada vez mais estou evoluindo profissional e intelectualmente, não somente pelas aulas mas também por meio de projetos para empresas reais sendo esses realizados em equipe para simular uma situação de trabalho real.
+                    </Text>
+                </Flex>
+                <Flex
+                    border='1px solid green'
+                    className="flex-centralizer"
+                    w='40%'>
+                    <Img src={imgAboutMe} alt='img-AboutMe' />
+                </Flex>
+            </Flex>
+
+
+
+            {/* <Flex
                 w='100%'
                 h='100%'
                 justifyContent='center'
@@ -61,7 +99,7 @@ export const AboutMeSection = forwardRef((_props, ref: ForwardedRef<HTMLDivEleme
                         </Flex>
                     </Flex>
                 </Flex>
-            </Flex>
+            </Flex> */}
         </Flex>
     )
 })
