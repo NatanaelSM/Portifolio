@@ -1,5 +1,4 @@
 import { Flex, Heading, Img, Link, Text } from "@chakra-ui/react"
-import '../../../pages/home/components/styles/index.css'
 
 interface SwiperPropriedades {
     nome: string,

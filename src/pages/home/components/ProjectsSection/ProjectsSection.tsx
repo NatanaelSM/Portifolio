@@ -1,5 +1,4 @@
 import { Flex, Heading, forwardRef } from "@chakra-ui/react"
-import '../styles/index.css'
 import sogapImg from "../../../../assets/sogap.png"
 import portifolioImg from "../../../../assets/portifolio.png"
 import formularioSimplesImg from "../../../../assets/formularioSimples.png"

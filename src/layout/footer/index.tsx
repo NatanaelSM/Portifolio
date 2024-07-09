@@ -10,7 +10,6 @@ export const Footer = () => {
             bg='black'
             justifyContent='center'
             alignItems='center'
-            mt='3%'
             gap='5px'
             className="flex-centralizer">
                 <Text>Desenvolvido por</Text>

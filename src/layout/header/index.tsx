@@ -1,7 +1,6 @@
 import { Box, Flex, HStack, Img } from "@chakra-ui/react"
 import { LinkHeader } from "./LinkHeader"
 import logo from '../../assets/logo_transparent.png'
-import { DrawerNav } from "./DrawerHeader"
 
 interface HeaderProps {
     onClickSection: (page: 'initial' | 'about' | 'projects' | 'skills') => void
@@ -34,16 +33,6 @@ export const Header = ({ onClickSection }: HeaderProps) => {
             </Box>
             <Flex
                 alignItems='center'>
-                <Box
-                    visibility={{
-                        base: "visible",
-                        sm: "visible",
-                        md: "visible",
-                        lg: "visible",
-                        xl: "hidden",
-                    }}>
-                    <DrawerNav />
-                </Box>
                 <Flex
                     display={{
                         base: "none",

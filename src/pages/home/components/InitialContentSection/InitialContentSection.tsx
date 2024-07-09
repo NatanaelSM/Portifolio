@@ -1,26 +1,23 @@
 import { Flex, HStack, Heading, Img, Text, VStack, Link } from "@chakra-ui/react"
 import linkedinImage from "../../../../assets/linkedin.png";
 import githubImage from "../../../../assets/github.png";
-import '../styles/index.css'
 import foto from '../../../../assets/foto.png'
 import { ForwardedRef, forwardRef } from "react";
+import { BtnInitial } from "./components/BtnInitial";
 
 export const InitialContentSection = forwardRef((_props, ref: ForwardedRef<HTMLDivElement>) => {
 
     return (
         <Flex
+            bg='#0B0B0B'
             ref={ref}
             id="initialContent-container"
-            paddingInline={{
-                base: "2rem",
-                sm: "2rem",
-                md: "2rem",
-                lg: "2rem",
-                xl: "20rem",
-            }}>
+            paddingInline='10%'
+            justifyContent='space-between'
+            h='83vh'>
             <Flex
-                className="flex-centralizer"
-                w='50%'>
+                justifyContent='center'
+                alignItems='center'>
                 <Flex
                     flexDir='column'>
                     <VStack
@@ -48,42 +45,27 @@ export const InitialContentSection = forwardRef((_props, ref: ForwardedRef<HTMLD
                     <HStack
                         spacing='15px'
                         marginTop='15px'>
-                        <Link
-                            className="btn"
-                            href="https://www.linkedin.com/in/natanaelsm/"
-                            target="_blank">
-                            <Text
-                                className="text-content"
-                                marginRight='5px'>
-                                Linkedin
-                            </Text>
-                            <Img boxSize='35px' src={linkedinImage} alt="LinkedIn" />
-                        </Link>
-                        <Link
-                            className="btn"
-                            href='https://github.com/NatanaelSM'
-                            target="_blank">
-                            <Text
-                                className="text-content"
-                                marginRight='5px'
-                                textDecoration='none'>
-                                GitHub
-                            </Text>
-                            <Img boxSize='35px' src={githubImage} alt="LinkedIn" />
-                        </Link>
+
+                        <BtnInitial siteRedirecionamento={"https://www.linkedin.com/in/natanaelsm/"} texto="Linkedin" img={linkedinImage} />
+
+                        <BtnInitial siteRedirecionamento={'https://github.com/NatanaelSM'} texto="GitHub" img={githubImage} />
+
                     </HStack>
                 </Flex>
-
             </Flex>
+
             <Flex
                 w='50%'
-                className="flex-centralizer">
+                justifyContent='center'
+                alignItems='center'>
                 <Flex
-                    className="flex-centralizer"
+                    justifyContent='center'
+                    alignItems='center'
                     h='100%'>
                     <Img src={foto} alt='foto' />
                 </Flex>
             </Flex>
+
         </Flex>
 
     )

@@ -1,5 +1,4 @@
 import { Box, Flex, Heading, Img, Text, forwardRef } from "@chakra-ui/react"
-import '../styles/index.css'
 import { TitleSection } from "../../../../shared/components/titleSection/TitleSection"
 import { ForwardedRef } from "react"
 import javaImg from '../../../../assets/java.png'
