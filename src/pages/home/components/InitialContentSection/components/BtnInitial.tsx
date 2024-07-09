@@ -19,8 +19,6 @@ export const BtnInitial = ({siteRedirecionamento, texto, img}: BtnInitialProps) 
             href={siteRedirecionamento}
             target="_blank">
             <Text
-                fontWeight='600'
-                fontSize='20px'
                 marginRight='5px'>
                 {texto}
             </Text>

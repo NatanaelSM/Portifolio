@@ -11,7 +11,7 @@ export const Header = ({ onClickSection }: HeaderProps) => {
     return (
         <Flex
             w='100%'
-            h='13rem'
+            h='9rem'
             position='sticky'
             top='0rem'
             zIndex='999'

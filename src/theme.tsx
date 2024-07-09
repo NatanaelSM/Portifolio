@@ -5,14 +5,15 @@ export const theme = extendTheme({
         global: {
             '*': {
                 boxSizing: 'border-box',
-                margin: 0,
-                padding: 0,
-                fontSize: '61.25%',
-                fontFamily: 'Saira,sans-serif',
-                fontWeight: 'bold',
-                color: 'white',
             },
             body: {
+                fontFamily: 'Saira,sans-serif',
+                margin: 0,
+                padding: 0,
+                fontWeight: 'bold',
+                fontSize: '20px',
+                background: '#0B0B0B',
+                color: 'white',
                 a: {
                     fontWeight: 600,
                     fontSize: '20px',

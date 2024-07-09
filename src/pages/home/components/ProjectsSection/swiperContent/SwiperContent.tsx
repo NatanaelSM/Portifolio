@@ -12,14 +12,16 @@ export const SwiperContent = ({ nome, img, descricao, linkRepositorio }: SwiperP
         <Flex
             w='100%'
             h='100%'
-            className="flex-centralizer"
+            justifyContent='center'
+            alignItems='center'
             flexDirection='column'
             gap='1%'
             p='3%'>
             <Flex
                 w='100%'
                 h='10%'
-                className="flex-centralizer">
+                justifyContent='center'
+                alignItems='center'>
                 <Heading
                     color='#7DAEF6'>
                     {nome}
@@ -28,7 +30,8 @@ export const SwiperContent = ({ nome, img, descricao, linkRepositorio }: SwiperP
             <Flex
                 w='100%'
                 h='50%'
-                className="flex-centralizer">
+                justifyContent='center'
+                alignItems='center'>
                 <Flex
                     boxShadow='1px 1px 15px 0px white'
                     borderRadius='10px'>
@@ -47,11 +50,18 @@ export const SwiperContent = ({ nome, img, descricao, linkRepositorio }: SwiperP
             <Flex
                 w='100%'
                 h='10%'
-                className="flex-centralizer">
+                justifyContent='center'
+                alignItems='center'>
                 <Link
                     target="_blank"
                     href={linkRepositorio}
-                    className="btn">
+                    w='245px'
+                    h='50px'
+                    borderRadius='10px'
+                    bg='linear-gradient(92deg, #9b79fc 2.07%, #ffffff40 160.82%);'
+                    alignItems='center'
+                    justifyContent={'center'}
+                    display='flex'>
                     Repositório
                 </Link>
             </Flex>
