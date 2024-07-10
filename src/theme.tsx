@@ -11,7 +11,7 @@ export const theme = extendTheme({
                 margin: 0,
                 padding: 0,
                 fontWeight: 'bold',
-                fontSize: '20px',
+                fontSize: '25px',
                 background: '#0B0B0B',
                 color: 'white',
                 a: {

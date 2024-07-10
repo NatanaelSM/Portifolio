@@ -43,7 +43,8 @@ export const SwiperContent = ({ nome, img, descricao, linkRepositorio }: SwiperP
                 h='30%'
                 alignItems='center'>
                 <Text
-                    textAlign='start'>
+                    textAlign='start'
+                    fontSize='20px'>
                     {descricao}
                 </Text>
             </Flex>
