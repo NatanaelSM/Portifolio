@@ -1,5 +1,4 @@
 import { Flex, Heading, forwardRef } from "@chakra-ui/react"
-import '../styles/index.css'
 import sogapImg from "../../../../assets/sogap.png"
 import portifolioImg from "../../../../assets/portifolio.png"
 import formularioSimplesImg from "../../../../assets/formularioSimples.png"
@@ -8,21 +7,23 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import '../styles/swiperProjectsSection.css';
+import './styles/swiperProjectsSection.css';
 import { Navigation, Pagination } from 'swiper/modules';
-import { TitleSection } from "../../../../shared/components/titleSection/TitleSection";
+import { TitleSection } from "../../../../shared/titleSection/TitleSection";
 import { ForwardedRef } from "react";
-import { SwiperContent } from "../../../../shared/components/swiperContent/SwiperContent";
+import { SwiperContent } from "./swiperContent/SwiperContent";
 
 export const ProjectsSection = forwardRef((_props, ref: ForwardedRef<HTMLDivElement>) => {
 
     return (
         <Flex
             ref={ref}
-            className="container-section"
             justifyContent='center'
+            bg='#0B0B0B'
             paddingY='3%'
-            h='100vh'>
+            h='100vh'
+            w='100%'
+            paddingInline='20rem'>
             <Flex
                 flexDirection='column'
                 w='100%'
@@ -30,7 +31,8 @@ export const ProjectsSection = forwardRef((_props, ref: ForwardedRef<HTMLDivElem
                 <Flex
                     w='100%'
                     h='10%'
-                    className="flex-centralizer">
+                    justifyContent='center'
+                    alignItems='center'>
                     <TitleSection titulo='Projetos' />
                 </Flex>
                 <Flex

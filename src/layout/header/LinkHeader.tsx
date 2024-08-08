@@ -11,6 +11,7 @@ export const LinkHeader = ({conteudo, onClick} : LinkHeaderProps) => {
             onClick={onClick}
             fontWeight='600'
             opacity='0.7'
+            color='white'
             borderBottom='2px solid black'
             _hover={{
                 textDecor: 'none',

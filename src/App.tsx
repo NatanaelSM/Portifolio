@@ -1,6 +1,6 @@
-import { ChakraProvider } from "@chakra-ui/react"
-import { theme } from "./theme"
+import { ChakraProvider,  } from "@chakra-ui/react"
 import { Home } from "./pages/home"
+import { theme } from "./theme"
 
 function App() {
 
