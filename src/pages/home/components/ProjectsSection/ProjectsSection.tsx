@@ -19,7 +19,7 @@ export const ProjectsSection = forwardRef((_props, ref: ForwardedRef<HTMLDivElem
         <Flex
             ref={ref}
             justifyContent='center'
-            bg='#0B0B0B'
+            bg='black'
             paddingY='3%'
             h='100vh'
             w='100%'
