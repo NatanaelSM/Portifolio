@@ -38,8 +38,8 @@ export const Home = () => {
             <Header onClickSection={scrollPage} />
             <InitialContentSection ref={initialContentRef} />
             <AboutMeSection ref={aboutMeRef} />
-            <ProjectsSection ref={projectsRef} />
             <SkillsSection ref={skillsRef} />
+            <ProjectsSection ref={projectsRef} />
             <Footer />
         </Flex>
     )

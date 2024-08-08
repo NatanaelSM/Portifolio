@@ -1,4 +1,4 @@
-import { Flex, HStack, Heading, Img, Text, VStack, Link } from "@chakra-ui/react"
+import { Flex, HStack, Heading, Img, Text, VStack } from "@chakra-ui/react"
 import linkedinImage from "../../../../assets/linkedin.png";
 import githubImage from "../../../../assets/github.png";
 import foto from '../../../../assets/foto.png'
