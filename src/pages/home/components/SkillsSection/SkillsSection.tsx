@@ -1,4 +1,4 @@
-import { Center, Flex, forwardRef, Grid, Heading } from "@chakra-ui/react"
+import {  Flex, forwardRef, Heading } from "@chakra-ui/react"
 import { TitleSection } from "../../../../shared/titleSection/TitleSection"
 import { ForwardedRef } from "react"
 import { Skill } from "./components/Skill"
